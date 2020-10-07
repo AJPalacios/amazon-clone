@@ -1,4 +1,3 @@
-import { ShoppingBasket } from '@material-ui/icons';
 import React from 'react'
 import CurrencyFormat from 'react-currency-format';
 
@@ -24,6 +23,7 @@ function Subtotal() {
                 thousandSeparator={true}
                 prefix={"£"}
             />
+            <button>Proceed to checkout</button>
         </div>
     )
 }

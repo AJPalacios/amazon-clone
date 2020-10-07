@@ -20,7 +20,6 @@ function CheckOut() {
             </div> 
             <div className="checkout_right">
                 <Subtotal />
-                <h2>Subtotal component</h2>
             </div>
         </div>
     )
