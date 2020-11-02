@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reducer, { initialState } from './Context/Reducer';
 import { StateProvider } from './Context/StateProvider';
+import { ClipThemeProvider, theme } from 'clip-storybook';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer} >
-      <App />
+      <ClipThemeProvider theme={theme} >
+          <App />
+      </ClipThemeProvider>
     </StateProvider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Product from "../Product";
+import { ClipButton } from 'clip-storybook';
 
 function Home() {
   return (
@@ -60,6 +61,7 @@ function Home() {
             rating={5}
           />
         </div>
+        <ClipButton color="primary" variant="contained">Test</ClipButton>
       </div>
     </div>
   );
